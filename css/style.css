@@ -15,17 +15,8 @@ header{
 		border-radius: 0;
 		border:0;
 }
-
-
-
-
-
-
-
-
-
-		.fa-facebook,
-		.fa-twitter,
+.fa-facebook,
+.fa-twitter,
 .fa-camera{
 		font-size: 18px;
 		color: #fff;
@@ -322,14 +313,15 @@ header{
 .next-arrow:after {
   content: "❯";
 }*/
-@media only screen and (max-width: 425px) and (min-width: 321px) {
-	.coverflow {
+@media only screen and (max-width:500px) {
+  .coverflow {
 		height: 230px;
 	}
-}
-@media only screen and (max-width:320px) {
-  .coverflow {
-	  height: 190px;
+	.prev-arrow{
+		width: 80px;
+	}
+	.next-arrow{
+		width: 80px;
 	}
 }
 @media only screen and (max-width:768px) and (min-width: 426px) {

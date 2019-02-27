@@ -87,7 +87,7 @@
           <div class="col-md-12">
             <div class="text-center">
               <div class="icon-img">
-                <a href="#">
+                <a href="#features">
                   <img src="images/icon-1.png" class="text-center img-fluid">
                 </a>
               </div>
@@ -332,10 +332,12 @@
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js" ></script>
   <script type="text/javascript">
-/*------------------------------
-        Album Cover Slider
---------------------------------*/
-//start added by Chase
+
+
+          /*------------------------------
+                  Album Cover Slider
+          --------------------------------*/
+          //start added by Chase
 var a = document.getElementsByTagName(".slide");
 var cfImg = document.getElementsByClassName("coverflow__image")
 
@@ -407,14 +409,12 @@ function setupCoverflow(coverflowContainer) {
       //call the functin forScale added
       forScale(coverflow.position);
     }
-
     function setNextImage() {
       coverflow.position = Math.min(coverflow.images.length, coverflow.position + 1);
       coverflow.container.dataset.coverflowPosition = coverflow.position;
       //call the function Chase added
       forScale(coverflow.position);
     }
-
     function jumpToImage(evt) {
       coverflow.position = Math.min(coverflow.images.length, Math.max(1, evt.target.dataset.coverflowIndex));
       coverflow.container.dataset.coverflowPosition = coverflow.position;
@@ -424,7 +424,6 @@ function setupCoverflow(coverflowContainer) {
       }, 1);
       //end added by Chase
     }
-
     function onKeyPress(evt) {
       switch (evt.which) {
         case 37: //left arrow
@@ -447,7 +446,6 @@ function setupCoverflow(coverflowContainer) {
     window.addEventListener('keyup', onKeyPress);
   });
 }
-
 setupCoverflow();
   </script>
 </body>
